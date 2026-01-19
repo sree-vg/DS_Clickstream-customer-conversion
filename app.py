@@ -48,6 +48,19 @@ product_map = {
     4: 'Sale'
 }
 
+from sklearn.base import BaseEstimator, TransformerMixin
+
+class AddDerivedFeatures(BaseEstimator, TransformerMixin):
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        X = X.copy()
+        X["country_name"] = X["country"].map(country_map)
+        X["main_product"] = X["page1_main_category"].map(product_map)
+        X["session_id"] = 0
+        return X
+
 # ======================================================
 # LOAD TRAINED ARTIFACTS
 # ======================================================
