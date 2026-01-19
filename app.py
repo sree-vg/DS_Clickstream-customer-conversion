@@ -48,19 +48,6 @@ product_map = {
     4: 'Sale'
 }
 
-from sklearn.base import BaseEstimator, TransformerMixin
-
-class AddDerivedFeatures(BaseEstimator, TransformerMixin):
-    def fit(self, X, y=None):
-        return self
-
-    def transform(self, X):
-        X = X.copy()
-        X["country_name"] = X["country"].map(country_map)
-        X["main_product"] = X["page1_main_category"].map(product_map)
-        X["session_id"] = 0
-        return X
-
 # ======================================================
 # LOAD TRAINED ARTIFACTS
 # ======================================================
@@ -111,7 +98,6 @@ def user_input_form():
         with col3:
             page2_clothing_model = st.text_input("Clothing Model Code", "P1")
             model_photography = st.selectbox("Model Photography", [1, 2])
-            price_2 = st.selectbox("Price Above Category Avg", [1, 2])
             page_depth = st.slider("Page Depth", 1, 5, 3)
 
         submitted = st.form_submit_button("Predict")
@@ -127,7 +113,6 @@ def user_input_form():
         "colour": colour,
         "location": location,
         "model_photography": model_photography,
-        "price_2": price_2,
         "page": page_depth
     }])
 
