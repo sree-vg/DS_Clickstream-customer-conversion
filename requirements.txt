@@ -1,9 +1,9 @@
-python-dateutil
+streamlit
 numpy==1.26.4
 pandas==2.1.4
-scikit-learn==1.2.2
+scikit-learn==1.1.3
 joblib==1.3.2
 category-encoders==2.6.3
-streamlit
+scipy==1.11.4
 
 
