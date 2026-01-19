@@ -1,9 +1,9 @@
+python-dateutil
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.2.2
+joblib==1.3.2
+category-encoders==2.6.3
 streamlit
-pandas
-numpy
-scikit-learn
-scipy
-joblib
-imbalanced-learn
-xgboost
-lightgbm
+python-3.10.13
+
