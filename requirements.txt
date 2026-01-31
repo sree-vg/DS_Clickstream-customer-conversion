@@ -7,3 +7,4 @@ category-encoders==2.6.3
 scipy==1.16.3
 matplotlib
 seaborn
+imbalanced-learn==0.12.3
