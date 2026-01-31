@@ -6,6 +6,17 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+# ======================================================
+# FORCE PICKLE DEPENDENCIES (CRITICAL)
+# ======================================================
+import sklearn
+import sklearn.pipeline
+import sklearn.compose
+import sklearn.preprocessing
+import sklearn.impute
+
+import category_encoders
+from category_encoders import TargetEncoder
 
 # ======================================================
 # PAGE CONFIG
