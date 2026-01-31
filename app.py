@@ -307,7 +307,7 @@ st.markdown(
     "<p style='text-align: center; color: gray;'>"
     "🛒 <strong>Customer Conversion Analysis</strong> – Data Science Capstone Project | "
     "Built with 💻 Streamlit & Scikit-learn | "
-    "By <a href='https://github.com/your_github' target='_blank'>SREE V G</a>"
+    "By <a href='https://github.com/sree-vg/DS_Clickstream-customer-conversion' target='_blank'>SREE V G</a>"
     "</p>",
     unsafe_allow_html=True
 )
