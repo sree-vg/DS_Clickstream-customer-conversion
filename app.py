@@ -76,7 +76,7 @@ clf_pipe, reg_pipe, kmeans, pca, cluster_preprocessor = load_models()
 # ======================================================
 # SIDEBAR NAVIGATION
 # ======================================================
-st.sidebar.title("🔍 Navigation")
+st.sidebar.title("🧠 Analytics Hub")
 page = st.sidebar.radio(
     "Go to",
     [
@@ -303,4 +303,11 @@ These behavioral signals help businesses design:
 # FOOTER
 # ======================================================
 st.markdown("---")
-st.caption("🚀 Customer Conversion Analysis – Data Science Capstone Project")
+st.markdown(
+    "<p style='text-align: center; color: gray;'>"
+    "🛒 <strong>Customer Conversion Analysis</strong> – Data Science Capstone Project | "
+    "Built with 💻 Streamlit & Scikit-learn | "
+    "By <a href='https://github.com/your_github' target='_blank'>SREE V G</a>"
+    "</p>",
+    unsafe_allow_html=True
+)
